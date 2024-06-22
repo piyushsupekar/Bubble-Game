@@ -30,7 +30,7 @@ body {
 }
 
 #ptop {
-    padding: 0 9%;
+    padding: 0 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +56,26 @@ body {
     font-weight: 700;
     font-size: 20px;
 
+}
+
+.hitbox {
+    padding: 2px 6px;
+    margin: 5px 5px;
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.scorebox {
+    padding: 2px 6px;
+    margin: 5px 5px;
+    color: rgb(255, 255, 255);
+    background-color: #1ea30f;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 #pbtm {
