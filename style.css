@@ -30,7 +30,7 @@ body {
 }
 
 #ptop {
-    padding: 0 30%;
+    padding: 0 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,17 +43,18 @@ body {
 .elem {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 0px;
 
 }
 
 .box {
-    padding: 10px 20px;
+    padding: 6px 6px;
+    margin: 5px 5px;
     color: rgb(53 85 53);
     background-color: #fff;
     border-radius: 5px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
