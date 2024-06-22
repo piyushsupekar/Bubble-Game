@@ -1,4 +1,4 @@
-var timer = 60;
+var timer = 6;
 var score = 0;
 var hitrn = 0;
 
@@ -24,16 +24,7 @@ function makeBubble() {
 }
 
 
-function matching() {
-    document.querySelector("#pbtm").addEventListener("click", function score(dets) {
-        var print = Number(dets.target.textContent);
-        if (print === hitrn) {
-            increaseScore();
-            getNewHit();
-            makeBubble();
-        }
-    })
-}
+
 function runTimer() {
     var timerint = setInterval(function () {
         if (timer > 0) {
@@ -43,13 +34,33 @@ function runTimer() {
         }
         else {
             clearInterval(timerint);
-            document.querySelector("#pbtm").innerHTML = `Game Over<br>Your Score is: ${score}`;
+            if (score >= 200) {
+                document.querySelector("#pbtm").innerHTML = `Game Over<br>Your Score is: ${score} <br> !!!!!!!!! Nice Work Brotherr !!!!!!`;
+
+            }
+            else if (score === 0) {
+
+                document.querySelector("#pbtm").innerHTML = `Game Over<br>Your Score is: ${score} <br><br><br> !!!!! BETA WATCH POGO !!!! `;
+            }
+            else {
+                document.querySelector("#pbtm").innerHTML = `Game Over<br>Your Score is: ${score} <br><br><br>!!!!! BOOOOOOO !!!!! NOOOOOOB !!! `;
+
+            }
 
         }
     }, 1000);
 }
 
-
+function matching() {
+    document.querySelector("#pbtm").addEventListener("click", function (dets) {
+        var print = Number(dets.target.textContent);
+        if (print === hitrn) {
+            increaseScore();
+            getNewHit();
+            makeBubble();
+        }
+    })
+}
 runTimer();
 getNewHit();
 makeBubble();
