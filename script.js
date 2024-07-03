@@ -23,12 +23,31 @@ function getNewHit() {
 
 function makeBubble() {
     clutter = "";
-    for (var i = 1; i <= 184; i++) {
+    var containerWidth = document.querySelector("#pbtm").offsetWidth;
+    var numberOfBubbles;
+
+    // Adjust the number of bubbles based on the container width
+    if (containerWidth < 600) { // Example breakpoint for mobile devices
+        numberOfBubbles = 38; // Fewer bubbles for smaller screens
+    } else {
+        numberOfBubbles = 184; // More bubbles for larger screens
+    }
+
+    for (var i = 1; i <= numberOfBubbles; i++) {
         var rn = Math.floor(Math.random() * 10);
         clutter += `<div class="bubble bluebubble">${rn}</div>`;
     }
     document.querySelector("#pbtm").innerHTML = clutter;
 }
+
+// function makeBubble() {
+//     clutter = "";
+//     for (var i = 1; i <= 25; i++) {
+//         var rn = Math.floor(Math.random() * 10);
+//         clutter += `<div class="bubble bluebubble">${rn}</div>`;
+//     }
+//     document.querySelector("#pbtm").innerHTML = clutter;
+// }
 
 function runTimer() {
     // Delay timer start by 5 seconds
