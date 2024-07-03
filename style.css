@@ -305,3 +305,11 @@ li {
         font-size: 22px;
     }
 }
+
+@media only screen and (max-width : 300px) {
+    #container {
+        width: 25vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
