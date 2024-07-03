@@ -7,10 +7,12 @@ function increaseScore() {
     score += 10;
     document.querySelector("#scoreval").textContent = score;
 }
+
 function resetscore() {
     score = 0;
     document.querySelector("#scoreval").textContent = score;
 }
+
 function decreaseScore() {
     score -= 5;
     document.querySelector("#scoreval").textContent = score;
@@ -61,7 +63,7 @@ function runTimer() {
                 }
             }
         }, 1000); // Timer interval set to 1 second (1000 milliseconds)
-    }, 1000); // Delay set to 5 seconds (5000 milliseconds)
+    }, 1000); // Delay set to 1 second (1000 milliseconds)
 }
 
 function wrongBubble(bubble) {
