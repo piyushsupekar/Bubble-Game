@@ -40,18 +40,9 @@ function makeBubble() {
     document.querySelector("#pbtm").innerHTML = clutter;
 }
 
-// function makeBubble() {
-//     clutter = "";
-//     for (var i = 1; i <= 25; i++) {
-//         var rn = Math.floor(Math.random() * 10);
-//         clutter += `<div class="bubble bluebubble">${rn}</div>`;
-//     }
-//     document.querySelector("#pbtm").innerHTML = clutter;
-// }
-
 function runTimer() {
     // Delay timer start by 5 seconds
-    setTimeout(function () {// Initial timer value
+    setTimeout(function () {
         var timerint = setInterval(function () {
             if (timer > 0) {
                 timer--;
@@ -75,14 +66,12 @@ function runTimer() {
 
 function wrongBubble(bubble) {
     bubble.style.backgroundColor = "red";
-    // bubble.style.transform = "scale(1.5)"
     bubble.classList.add("shake-horizontal");
     bubble.style.transition = "all ease 0.5s";
 
     setTimeout(function () {
         bubble.style.backgroundColor = ""; // Reset color after some time (optional)
         bubble.classList.remove("shake-horizontal");
-        // bubble.style.transform = "scale(1)";
     }, 1000); // Adjust timing as needed
     decreaseScore();
 }
@@ -121,4 +110,3 @@ document.querySelector("#startButton").addEventListener("click", function () {
     matching();
     resetscore();
 });
-

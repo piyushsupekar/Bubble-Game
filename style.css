@@ -7,9 +7,8 @@
 
 html,
 body {
-    /* width: 100%;
-    height: 100%; */
-
+    width: 100%;
+    height: 100%;
 }
 
 .Game {
@@ -23,25 +22,18 @@ body {
     border-radius: 50px;
     opacity: 0.9;
     color: white;
-
 }
 
 #mainhomepage {
     width: 100%;
     height: 100%;
-    /* background: url(https://videos.pexels.com/video-files/8252781/8252781-uhd_2560_1440_30fps.mp4); */
-    /* position: fixed; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
 }
 
 video {
     width: 100%;
     height: 100%;
     position: fixed;
-    /* background-size: cover; */
-    object-fit: none;
+    object-fit: cover;
 }
 
 #main {
@@ -51,11 +43,6 @@ video {
     background-color: rgb(44 20 86);
     width: 100%;
     height: 100%;
-    /* background-image: url(./bubbles-green.jpg); */
-    background-clip: text;
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #panel {
@@ -83,7 +70,6 @@ video {
     display: flex;
     align-items: center;
     gap: 0px;
-
 }
 
 .box {
@@ -94,7 +80,6 @@ video {
     border-radius: 5px;
     font-weight: 700;
     font-size: 20px;
-
 }
 
 .olist {
@@ -170,12 +155,10 @@ video {
     line-height: 2;
     margin-top: 11vh;
     font-size: large;
-
 }
 
 #blink_text {
     animation-name: blink;
-    /* width: 280px; */
     animation-duration: .5s;
     animation-timing-function: ease-in;
     animation-iteration-count: Infinite;
@@ -243,21 +226,17 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
-
     color: white;
     padding: 10px;
-    /* position: fixed; */
     z-index: 99;
     width: 100%;
-
 }
 
 .btn {
     padding: 10px;
-
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
     #container {
         width: 40vh;
         display: flex;
@@ -281,9 +260,14 @@ li {
         font-weight: 800;
         font-size: 22px;
     }
+
+    .bubble {
+        width: 30px;
+        height: 30px;
+    }
 }
 
-@media only screen and (max-width : 516px) {
+@media only screen and (max-width: 516px) {
     #container {
         width: 64vh;
     }
@@ -305,12 +289,22 @@ li {
         font-weight: 800;
         font-size: 22px;
     }
+
+    .bubble {
+        width: 30px;
+        height: 30px;
+    }
 }
 
-@media only screen and (max-width : 300px) {
+@media only screen and (max-width: 300px) {
     #container {
         width: 25vh;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .bubble {
+        width: 25px;
+        height: 25px;
     }
 }
