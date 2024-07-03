@@ -28,7 +28,7 @@ function makeBubble() {
 
     // Adjust the number of bubbles based on the container width
     if (containerWidth < 600) { // Example breakpoint for mobile devices
-        numberOfBubbles = 38; // Fewer bubbles for smaller screens
+        numberOfBubbles = 40; // Fewer bubbles for smaller screens
     } else {
         numberOfBubbles = 184; // More bubbles for larger screens
     }
