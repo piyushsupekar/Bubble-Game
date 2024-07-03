@@ -25,62 +25,89 @@
   </head>
   <!-- Scrollable modal -->
   <body>
-    <div style="backdrop-filter: blur(5px)">
-      <div class="bg text-center">
-        <div class="Game">
-          <h2>-: Game Instructions :-</h2>
-        </div>
-        <div
-          id="container"
-          class="mx-auto">
-          <h2>⚠ Timer Is Already Started ⚠</h2>
-          <h3 id="blink_text">⚠ Hurry Up ⚠</h3>
-          <br />
-          <ol
-            type="1"
-            class="olist">
-            <li>Watch the Hit Box and Click the Bubbles = the Hit Box.</li>
-            <li>It will refresh Every time so Do it Fast....</li>
-            <li>Score > 200 Will be the Winner.. 🎉</li>
-          </ol>
-        </div>
-      </div>
-      <!-- <div
-      id="alerttt"
-      class="alert alert-danger"
-      role="alert"></div> -->
-      <div id="main">
-        <div id="panel">
-          <div id="ptop">
-            <div class="elem">
-              <h3>Hit</h3>
-              <div
-                id="hitval"
-                class="hitbox">
-                5
-              </div>
-            </div>
-            <div class="elem">
-              <h3>Timer</h3>
-              <div
-                id="timerValue"
-                class="box">
-                60
-              </div>
-            </div>
-            <div class="elem">
-              <h3>Score</h3>
-              <div
-                id="scoreval"
-                class="scorebox">
-                0
-              </div>
-            </div>
+    <div id="mainhomepage">
+      <video autoplay loop muted
+        src="https://videos.pexels.com/video-files/8252781/8252781-uhd_2560_1440_30fps.mp4"></video>
+      <div style="backdrop-filter: blur(5px)">
+        <div class="bg text-center">
+          <nav id="navbar">
+            <h1>Bubble Game</h1>
+          </nav>
+          <!-- <div class="Game">
+            <h2>-: Game Instructions :-</h2>
+          </div> -->
+          <div
+            id="container"
+            class="mx-auto">
+            <!-- <h2>⚠ Timer Is Already Started ⚠</h2> -->
+            <h3 id="blink_text">⚠ See Some Rules ⚠</h3>
+            <br />
+            <ol
+              type="1"
+              class="olist">
+              <li>Watch the Hit Box and Click the Bubbles = the Hit Box.</li>
+              <li>It will refresh Every time so Do it Fast....</li>
+              <li>Score > <strong
+                  style="background-color: green;padding: 0px 5px;">200</strong>
+                Will be the Winner.. 🎉</li>
+              <li>
+                If You Click On Wrong bubble
+                <strong
+                  style="background-color: red; padding: 0px 5px">-5</strong>
+                will be from your score
+              </li>
+            </ol>
           </div>
-          <div id="pbtm"></div>
+          <button
+            id="startButton"
+            class="btn btn-lg btn-dark my-4">
+            Start Game
+          </button>
+        </div>
+        <!-- <div
+        id="alerttt"
+        class="alert alert-danger"
+        role="alert"></div> -->
+        <div id="main">
+          <div id="panel">
+            <div id="ptop">
+              <div class="elem">
+                <h3>Hit</h3>
+                <div
+                  id="hitval"
+                  class="hitbox">
+                  5
+                </div>
+              </div>
+              <div class="elem">
+                <h3>Timer</h3>
+                <div
+                  id="timerValue"
+                  class="box">
+                  60
+                </div>
+              </div>
+              <div class="elem">
+                <h3>Score</h3>
+                <div
+                  id="scoreval"
+                  class="scorebox">
+                  0
+                </div>
+              </div>
+            </div>
+            <div id="pbtm"></div>
+          </div>
         </div>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
   </body>
 </html>

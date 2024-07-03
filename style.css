@@ -9,16 +9,12 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background: url(./bubbles-green.jpg);
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 
 .Game {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(7, 44, 7);
+    background-color: rgb(44 20 86);
     font-weight: 700;
     text-shadow: 2px 2px 2px black;
     display: inline-block;
@@ -30,14 +26,32 @@ body {
 
 }
 
+#mainhomepage {
+    width: 100%;
+    height: 100%;
+    /* background: url(https://videos.pexels.com/video-files/8252781/8252781-uhd_2560_1440_30fps.mp4); */
+    /* position: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    object-fit: cover;
+}
+
 #main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(120, 169, 120);
+    background-color: rgb(44 20 86);
     width: 100%;
     height: 100%;
-    background-image: url(./bubbles-green.jpg);
+    /* background-image: url(./bubbles-green.jpg); */
     background-clip: text;
     background-position: fixed;
     background-repeat: no-repeat;
@@ -48,8 +62,9 @@ body {
     overflow: hidden;
     width: 80%;
     height: 80%;
-    background-color: #fff;
+    background-color: #ffffffc2;
     border-radius: 10px;
+    margin-bottom: 34vh;
 }
 
 #ptop {
@@ -60,7 +75,7 @@ body {
     width: 100%;
     height: 100px;
     color: #fff;
-    background-color: rgb(38, 68, 38);
+    background-color: rgba(44, 20, 86, 0.879);
 }
 
 .elem {
@@ -74,7 +89,7 @@ body {
     padding: 6px 6px;
     margin: 5px 5px;
     color: rgb(53 85 53);
-    background-color: #fff;
+    background-color: #ffffffc2;
     border-radius: 5px;
     font-weight: 700;
     font-size: 20px;
@@ -127,7 +142,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    background-color: rgb(38, 68, 38);
+    background-color: rgb(44 20 86);
     border-radius: 50%;
     color: #fff;
     font-weight: 500;
@@ -135,14 +150,14 @@ body {
 
 .bubble:hover {
     cursor: pointer;
-    background-color: rgb(20, 36, 20);
+    background-color: rgb(23, 11, 44);
 }
 
 #container {
-    background-color: rgb(38, 60, 38);
+    background-color: rgba(44, 20, 86, 0.879);
     height: fit-content;
     color: white;
-    width: 40%;
+    width: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -150,6 +165,10 @@ body {
     align-content: center;
     border-radius: 40px;
     margin-bottom: 17px;
+    height: 54vh;
+    line-height: 2;
+    margin-top: 11vh;
+    font-size: large;
 
 }
 
@@ -159,11 +178,13 @@ body {
     animation-duration: .5s;
     animation-timing-function: ease-in;
     animation-iteration-count: Infinite;
+    font-size: xxx-large;
+    line-height: 2;
 }
 
 @keyframes blink {
     0% {
-        color: black;
+        color: rgb(255, 0, 0);
     }
 
     50% {
@@ -171,10 +192,65 @@ body {
     }
 
     100% {
-        color: black;
+        color: rgb(246, 255, 0);
     }
 }
 
 li {
     justify-content: center;
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+.shake-horizontal {
+    animation: shake-horizontal 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+#navbar {
+    background: linear-gradient(#000000d4, #07070761);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arsenal SC;
+    color: white;
+    padding: 10px;
+    /* position: fixed; */
+    z-index: 99;
+
+}
+
+.btn {
+    padding: 10px;
+
 }
