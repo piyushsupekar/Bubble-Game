@@ -1,4 +1,4 @@
-var timer = 10;
+var timer = 100;
 var score = 0;
 var hitrn = 0;
 var clutter = "";
@@ -32,7 +32,7 @@ function makeBubble() {
     if (containerWidth < 600) { // Example breakpoint for mobile devices
         numberOfBubbles = 40; // Fewer bubbles for smaller screens
     } else {
-        numberOfBubbles = 184; // More bubbles for larger screens
+        numberOfBubbles = 170; // More bubbles for larger screens
     }
 
     for (var i = 1; i <= numberOfBubbles; i++) {
